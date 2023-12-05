@@ -1,0 +1,9 @@
+services:
+  mars:
+    image: ubuntu:latest
+    build: .
+    environment:
+      - DISPLAY=$DISPLAY
+    volumes:
+      - /tmp/.X11-unix/:/tmp/.X11-unix/
+    container_name: mars_docker
